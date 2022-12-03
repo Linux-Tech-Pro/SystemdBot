@@ -2,3 +2,8 @@ config.json
 database.sqlite
 node_modules/*
 lastrsscache.json
+src/node_modules/*
+.DS_STORE
+._.DS_STORE
+._.gitignore
+._.vscode
