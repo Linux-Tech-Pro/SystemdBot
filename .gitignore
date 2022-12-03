@@ -1,0 +1,4 @@
+config.json
+database.sqlite
+node_modules/*
+lastrsscache.json
