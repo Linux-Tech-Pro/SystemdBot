@@ -44,13 +44,13 @@
             "enable": false,
             "reactions": [
                 {
-                    "channelID": "ID where the message to add reactions is",
-                    "messageID": "ID of the message you want to add reaction to",
+                    "channelID": "",
+                    "messageID": "",
                     "removeReactionAfterTrigger": false,
                     "type": "Type "one" for one emoji, Type "multiple" for multiple emojis",
                     "roleEmojis": [
                         {
-                            "roleID": "ID of Role you want the Emoji Assigned",
+                            "roleID": "",
                             "emoji": "✅" (can be any emoji)
                         }
                     ]
