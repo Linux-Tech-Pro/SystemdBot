@@ -51,7 +51,7 @@
                     "roleEmojis": [
                         {
                             "roleID": "",
-                            "emoji": "" (can be any emoji, for standard emojis, you can paste them in, for custom emojis, you must have the ID)
+                            "emoji": "" (can be any emoji, for standard emojis, you can just copy/paste them in, for custom emojis, you must have the ID)
                         }
                     ]
                 }
