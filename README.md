@@ -43,7 +43,8 @@ Some of these features can be configured with `config.ts`
 All you need is to have latest version of [git](https://git-scm.com/) and
 [deno](https://deno.land/) installed on your system<br> **Step 1**: Clone this
 repository `git clone https://github.com/MacTechStudios/LevelingBot.git`<br> **Step 2**:
-Rename `config.temp.ts` to `config.ts` and complete there<br> **Step 3**: Open a
+Rename `config.temp.ts` to `config.ts` in the config folder, as well as Rename `reactionrole.temp.ts`
+to `reactionrole.ts` in the custom folder and complete there<br> **Step 3**: Open a
 terminal<br> **Step 4**: Run the bot with `deno task run`
 
 # How to keep your bot online 24/7 (for who has vps with access to ssh)
