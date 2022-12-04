@@ -1,5 +1,5 @@
 # LevelingBot
-<img src="./Leveling Bot Beta.png"><br>
+<img src="./readme-logo.png"><br>
 
 <figcaption align="center"><q>Good bot</q> - CatNowBlue</figcaption>
 <h1 align="center"> CatNowBot - codename "Jolly" </h1>
