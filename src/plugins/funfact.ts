@@ -13,6 +13,6 @@ export function funfact(client: BotWithCache<Bot>) {
         }) as FunfactContent;
         if (contents.length < 1) return;
         const choiced = contents[Math.floor(Math.random() * contents.length)]
-        send(client, funfact.channelID, `**Fun fact:** ${choiced}`)
-    }, funfact.intervalInMin * 1000 * 60)
+        send(client, funfact.channelID!, `**Fun fact:** ${choiced}`)
+    }, (!funfact.intervalInMin ? 250 : funfact.intervalInMin) * 1000 * 60)
 }

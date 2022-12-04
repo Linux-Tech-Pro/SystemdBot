@@ -1,9 +1,12 @@
-config.json
-database.sqlite
 node_modules/*
+.vscode/*
+Old\ File/*
+app.sh
+checkForUpdate.sh
+database.sqlite
+deno.lock
 lastrsscache.json
-src/node_modules/*
-.DS_STORE
-._.DS_STORE
-._.gitignore
-._.vscode
+package.json
+package-lock.json
+config/config.ts
+reactionrole.ts

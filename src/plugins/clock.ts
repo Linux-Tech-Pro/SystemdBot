@@ -33,7 +33,7 @@ export async function clock(client: BotWithCache<Bot>) {
         includesTimezone: true,
         timezone: conf.timezone
     })
-    const chName = conf.channelName.replace("$TIME", c).replace("$EMOJI", clockEmoji(d))
+    const chName = conf.channelName!.replace("$TIME", c).replace("$EMOJI", clockEmoji(d))
     if (conf.channelID == "0") {
         const { id } = await client.helpers.createChannel(config.guildID, {
             name: chName,
@@ -57,5 +57,5 @@ export async function clock(client: BotWithCache<Bot>) {
         editChannel(client, BigInt(conf.channelID), {
             name: chName
         })
-    }, 1000 * 60 * conf.intervalInMinutes)
+    }, 1000 * 60 * (!conf.intervalInMinutes ? 10: conf.intervalInMinutes))
 }
