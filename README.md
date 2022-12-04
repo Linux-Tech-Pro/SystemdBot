@@ -1,14 +1,12 @@
 # LevelingBot
 <img src="./readme-logo.png"><br>
 
-<figcaption align="center"><q>Good bot</q> - CatNowBlue</figcaption>
-<h1 align="center"> CatNowBot - codename "Jolly" </h1>
+<h1 align="center"> Leveling Bot - codename "leveling.service" </h1>
 
 <p align="center">
-  <a href="https://github.com/raluvy95/jolly/blob/main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/raluvy95/jolly"></img></a>
-  <a href="https://discord.gg/3CVqX5bphG" alt="Discord"><img src="https://img.shields.io/discord/829309363213565982?label=Discord&style=flat&logo=discord&logoColor=white"></img></a>
-  <a href="https://github.com/raluvy95/jolly/issues" alt="Issues"><img src="https://img.shields.io/github/issues/raluvy95/jolly"></img></a>
-  <a href="https://github.com/raluvy95/jolly/actions/workflows/deno.yml" alt="Lint status"><img src="https://github.com/raluvy95/jolly/actions/workflows/deno.yml/badge.svg"></a>
+  <a href="https://github.com/MacTechStudios/LevelingBot/blob/Main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/MacTechStudios/LevelingBot"></img></a>
+  <a href="https://discord.gg/AgBEcyvPhk" alt="Discord"><img src="https://img.shields.io/discord/1041477113422815382?color=%23900000&label=Online&logo=The%20Nerds&style=flat"></img></a>
+  <a href="https://github.com/raluvy95/jolly/issues" alt="Issues"><img src="https://img.shields.io/github/issues/MacTechStudios/LevelingBot"></img></a>
 </p>
 A discord bot designed for my server (private bot). Rewritten in
 TypeScript using Deno. Its predecessor can be found in
