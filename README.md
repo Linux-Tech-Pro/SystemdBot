@@ -1,5 +1,5 @@
 # LevelingBot
-<img src="./readme-logo.png"><br>
+<img src="./logo.png"><br>
 
 <h1 align="center"> Leveling Bot - codename "leveling.service" </h1>
 
