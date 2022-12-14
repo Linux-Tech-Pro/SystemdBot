@@ -9,4 +9,5 @@ lastrsscache.json
 package.json
 package-lock.json
 config/config.ts
-reactionrole.ts
+custom/reactionrole.ts
+custom/funfact.json

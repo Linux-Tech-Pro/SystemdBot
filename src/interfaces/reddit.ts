@@ -126,6 +126,7 @@ interface Image {
 
 interface Preview {
     images: Image[];
+    reddit_video: RedditVideo2[];
     enabled: boolean;
 }
 

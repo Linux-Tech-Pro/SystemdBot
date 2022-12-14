@@ -125,7 +125,7 @@ export async function handleXP(client: BotWithCache<Bot>, message: Message) {
             levelCooldown.delete(user);
         }, ca);
     }
-    const addXP = Math.floor(Math.random() * (25 - 15 + 1)) + 15;
+    const addXP = Math.floor(Math.random() * (50 - 15 + 1)) + 35;
     level.setXP(message.channelId, client, message.authorId, addXP, XP_METHOD.ADD)
 }
 
