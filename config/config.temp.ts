@@ -154,7 +154,7 @@ const plugins = {
     },
     funfact: {
         enable: false,
-        // documentation: https://github.com/MacTechStudios/LevelingBot/wiki/Source-for-the-Fun-Fact
+        // documentation: https://github.com/MacTechStudios/SystemdBot/wiki/Source-for-the-Fun-Fact
         source: "URL",
         intervalInMin: 120,
         channelID: "channelID"

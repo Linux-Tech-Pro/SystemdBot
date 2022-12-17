@@ -1,12 +1,12 @@
 # LevelingBot
 <img src="./logo.png"><br>
 
-<h1 align="center"> Leveling Bot - codename "leveling.service" </h1>
+<h1 align="center"> Systemd Bot - codename "systemd.service" </h1>
 
 <p align="center">
-  <a href="https://github.com/MacTechStudios/LevelingBot/blob/Main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/MacTechStudios/LevelingBot"></img></a>
+  <a href="https://github.com/MacTechStudios/SystemdBot/blob/Main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/MacTechStudios/SystemdBot"></img></a>
   <a href="https://discord.gg/AgBEcyvPhk" alt="Discord"><img src="https://img.shields.io/discord/1041477113422815382?color=%23900000&label=Online&logo=The%20Nerds&style=flat"></img></a>
-  <a href="https://github.com/MacTechStudios/LevelingBot/issues" alt="Issues"><img src="https://img.shields.io/github/issues/MacTechStudios/LevelingBot"></img></a>
+  <a href="https://github.com/MacTechStudios/SystemdBot/issues" alt="Issues"><img src="https://img.shields.io/github/issues/MacTechStudios/SystemdBot"></img></a>
 </p>
 A discord bot designed for my server (private bot). Rewritten in
 TypeScript using Deno. Its founding Project can be found in
