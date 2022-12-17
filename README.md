@@ -1,4 +1,4 @@
-# LevelingBot
+# SystemdBot
 <img src="./logo.png"><br>
 
 <h1 align="center"> Systemd Bot - codename "systemd.service" </h1>
@@ -42,7 +42,7 @@ Some of these features can be configured with `config.ts`
 
 All you need is to have latest version of [git](https://git-scm.com/) and
 [deno](https://deno.land/) installed on your system<br> **Step 1**: Clone this
-repository `git clone https://github.com/MacTechStudios/LevelingBot.git`<br> **Step 2**:
+repository `git clone https://github.com/MacTechStudios/SystemdBot.git`<br> **Step 2**:
 Rename `config.temp.ts` to `config.ts` in the config folder, as well as Rename `reactionrole.temp.ts`
 to `reactionrole.ts` in the custom folder and complete there<br> **Step 3**: Open a
 terminal<br> **Step 4**: Run the bot with `deno task run`
@@ -54,23 +54,23 @@ included in major Linux distros.
 
 If you have `screen` in your server. Great!
 
-Use this following command to start a new session called `leveling`
+Use this following command to start a new session called `systemd`
 
 ```bash
-screen -S leveling -m deno task run
+screen -S systemd -m deno task run
 ```
 
 _you can return back to main session with [Ctrl+A] + D_
 
 To list of sessions, type `screen -ls`<br> To reconnect to virtual session, type
 `screen -r <session>`.<br> To kill an unresponsive session, press _[Ctrl+A] +
-K_<br> Example `screen -r leveling`
+K_<br> Example `screen -r systemd`
 
 # Custom folder
 
 You may notice that there's custom folder. But what it is used for?<br> This is
 used for additional tasks coming for config.ts such as making custom variables
-to be used. I am not sure if it's for injecting new feature into leveling.service, but that
+to be used. I am not sure if it's for injecting new feature into systemd.service, but that
 would be cool. **Anyway, this is optional.**
 
 # License
