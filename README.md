@@ -4,9 +4,9 @@
 <h1 align="center"> Systemd Bot - codename "systemd.service" </h1>
 
 <p align="center">
-  <a href="https://github.com/MacTechStudios/SystemdBot/blob/Main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/MacTechStudios/SystemdBot"></img></a>
+  <a href="https://github.com/Linux-Tech-Pro/SystemdBot/blob/Main/LICENSE" alt="License"><img src="https://img.shields.io/github/license/Linux-Tech-Pro/SystemdBot"></img></a>
   <a href="https://discord.gg/AgBEcyvPhk" alt="Discord"><img src="https://img.shields.io/discord/1041477113422815382?color=%23900000&label=Online&logo=The%20Nerds&style=flat"></img></a>
-  <a href="https://github.com/MacTechStudios/SystemdBot/issues" alt="Issues"><img src="https://img.shields.io/github/issues/MacTechStudios/SystemdBot"></img></a>
+  <a href="https://github.com/Linux-Tech-Pro/SystemdBot/issues" alt="Issues"><img src="https://img.shields.io/github/issues/Linux-Tech-Pro/SystemdBot"></img></a>
 </p>
 A discord bot designed for my server (private bot). Rewritten in
 TypeScript using Deno. Its founding Project can be found in
@@ -42,7 +42,7 @@ Some of these features can be configured with `config.ts`
 
 All you need is to have latest version of [git](https://git-scm.com/) and
 [deno](https://deno.land/) installed on your system<br> **Step 1**: Clone this
-repository `git clone https://github.com/MacTechStudios/SystemdBot.git`<br> **Step 2**:
+repository `git clone https://github.com/Linux-Tech-Pro/SystemdBot.git`<br> **Step 2**:
 Rename `config.temp.ts` to `config.ts` in the config folder, as well as Rename `reactionrole.temp.ts`
 to `reactionrole.ts` in the custom folder and complete there<br> **Step 3**: Open a
 terminal<br> **Step 4**: Run the bot with `deno task run`
