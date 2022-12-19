@@ -1,5 +1,5 @@
 # SystemdBot
-<img src="./logo.png"><br>
+<img src="./assets/logo.png"><br>
 
 <h1 align="center"> Systemd Bot - codename "systemd.service" </h1>
 
