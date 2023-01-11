@@ -1,26 +1,30 @@
+import { CreateMessage, Embed } from "@deps";
+import { JollyEmbed } from "@classes/embed.ts";
+
 export interface PluginBase {
     enable: boolean,
 }
 
 export interface Plugins {
-    reactionRole: ReactionRolePlug,
-    showContentOnMessageLink: boolean,
-    bump: Bump,
-    ree: boolean,
-    sudo: boolean,
-    selfping: SelfPing,
-    nicknameOnJoin: NicknameOnJoin,
-    autoPublish: AutoPublish,
-    autorole: Autorole,
-    autopost: Autopost,
-    autoCreateChannel: AutoCreateChannel,
-    ghostPing: boolean,
-    autoRenameChannel: AutoRenameChannel,
-    levelXP: LevelXP,
-    funfact: FunFact,
-    clockChannel: ClockChannel,
-    rss: RSS,
-    logging: Logging,
+    reactionRole: ReactionRolePlug
+    showContentOnMessageLink: boolean
+    bump: Bump
+    ree: boolean
+    sudo: boolean
+    selfping: SelfPing
+    nicknameOnJoin: NicknameOnJoin
+    autoPublish: AutoPublish
+    autorole: Autorole
+    autopost: Autopost
+    autoCreateChannel: AutoCreateChannel
+    ghostPing: boolean
+    greeting: Greeting
+    autoRenameChannel: AutoRenameChannel
+    levelXP: LevelXP
+    funfact: FunFact
+    clockChannel: ClockChannel
+    rss: RSS
+    logging: Logging
     music: Music
 }
 
@@ -124,19 +128,51 @@ interface RSS extends PluginBase {
     customMessage?: string
 }
 
-export type AllowedEvents = "threadCreate" | "threadDelete"
-    | "threadUpdate" | "guildMemberAdd" | "guildMemberRemove"
-    | "guildMemberUpdate" | "messageDelete" | "messageDeleteBulk"
+export type AllowedEvents = "guildMemberAdd" | "guildMemberRemove" | "messageDelete" | "messageDeleteBulk"
     | "channelCreate" | "channelDelete" | "roleCreate" | "roleDelete"
     | "messageUpdate"
 
+export interface ObjAllowedEvents {
+    channelID?: string,
+    event: AllowedEvents
+}
+
 interface Logging extends PluginBase {
     warnLogChannelID?: string,
-    channelID?: string,
-    events?: Array<AllowedEvents>
+    globalChannelID?: string,
+    events?: Array<ObjAllowedEvents>
 }
 
 // deno-lint-ignore no-empty-interface
 interface Music extends PluginBase {
 
+}
+
+export interface ContextMessage {
+    embed: JollyEmbed,
+    author: string,
+    authorAvatarURL: string,
+    mention: string,
+    memberCount: number,
+    serverName: string
+}
+
+export type FuncContextMessage = (ctx: ContextMessage) => string | CreateMessage | Embed[]
+
+interface Greeting extends PluginBase {
+    join?: {
+        enable: boolean,
+        channelID: string,
+        customMessage: FuncContextMessage | string
+    },
+    leave?: {
+        enable: boolean,
+        channelID: string,
+        customMessage: FuncContextMessage | string
+    },
+    ban?: {
+        enable: boolean,
+        channelID: string,
+        customMessage: FuncContextMessage | string
+    }
 }

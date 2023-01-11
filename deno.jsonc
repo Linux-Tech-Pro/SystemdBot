@@ -8,8 +8,8 @@
            from: "deno run -A src/index.ts"
            to:   "deno run -A --unstable src/index.ts"
         */
-        "run": "DEV=0 deno run -A src/index.ts",
-        "prod": "deno run -A src/index.ts",
+        "run": "DEV=0 deno run -A --unstable src/index.ts",
+        "prod": "deno run -A --unstable src/index.ts",
         "watch": "deno run --watch -A src/index.ts",
         "check": "deno cache --check src/index.ts",
         "register": "deno run -A registerSlashCommand.js"

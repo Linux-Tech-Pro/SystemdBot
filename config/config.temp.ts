@@ -1,5 +1,6 @@
 import { IJollyConfig } from "../src/interfaces/config.ts";
-import { custom } from "../custom/reactionrole.temp.ts";         // duplicate this line as needed, rename reactionrole.temp.ts to reactionrole.ts
+import { ContextMessage, Plugins } from "../src/interfaces/plugins.ts";
+import { custom } from "../custom/reactionroles/reactionrole.temp.ts";         // duplicate this line as needed, rename reactionrole.temp.ts to reactionrole.ts
 
 /*
     TypeScript-based Configuration:
@@ -186,6 +187,49 @@ const plugins = {
     // if you want to have music support
     music: {
         enable: false
+    },
+    greeting: {
+         /*
+               You can Use the following attributes in Fields, as long as they are under the `` (not required to do, but its helpful):
+               {ctx.mention} - user's mention
+               {ctx.author} - author's name and tag
+               {ctx.authorAvatarURL} - Adds the Avatar of the person who joined/left
+               {ctx.memberCount} - server's member count
+               {ctx.serverName} - server's name
+               Make sure to follow the embed template used in embed.temp.ts under the custom folder
+        */
+        enable: true,
+        join: {
+            enable: true,
+            channelID: "channelID",
+            customMessage: (ctx: ContextMessage) => {
+                return ctx.embed
+                .setTitle("Member Joined")
+                .setDesc(``)
+                .addField("", ``, true)
+                .setThumb(ctx.authorAvatarURL)
+                .build()
+            }
+        },
+        leave: {
+            enable: true,
+            channelID: "channelID",
+            customMessage: (ctx: ContextMessage) => {
+                return ctx.embed.setTitle("Member Left")
+                .setThumb(ctx.authorAvatarURL)
+                .setDesc(``)
+                .addField("", ``, true)
+                .addField("", ``)
+                .build()
+            }
+        },
+        ban: {
+            enable: false,
+            channelID: "channelID",
+            customMessage: (ctx: ContextMessage) => {
+                return `${ctx.author} got banned`
+            }
+        }
     }
 } as Plugins
 

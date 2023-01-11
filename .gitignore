@@ -1,4 +1,4 @@
-node_modules/*
+src/node_modules/*
 .vscode/*
 Old\ File/*
 app.sh
@@ -9,5 +9,11 @@ lastrsscache.json
 package.json
 package-lock.json
 config/config.ts
-custom/reactionrole.ts
+custom/reactionroles/age.ts
+custom/reactionroles/continent.ts
+custom/reactionroles/osroles.ts
+custom/reactionroles/otherpings.ts
+custom/reactionroles/progroles.ts
+custom/reactionroles/texteditor.ts
 custom/funfact.json
+custom/reactionrole.ts

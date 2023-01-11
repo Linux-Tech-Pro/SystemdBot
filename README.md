@@ -12,8 +12,9 @@ A discord bot designed for my server (private bot). Rewritten in
 TypeScript using Deno. Its founding Project can be found in
 <a href="https://github.com/raluvy95/jolly">another repository</a>
 
-You can contribute whatever you want to improve the bot with additional features
-bug fixes.
+ATTENTION: This Project will no longer be recieving updates/upgrades. I am currently in the process of rewriting a new Bot, so this Backend
+will be Retired. When the new bot is ready, this project will be Archived. You can still clone this repo and make a bot of your own out of it,
+to get more updates for it, but this project is reaching its EOL
 <br>
 <br>
 

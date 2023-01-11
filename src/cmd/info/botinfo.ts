@@ -4,7 +4,7 @@ import { send } from "@utils/send.ts";
 import { JollyEmbed } from "@classes/embed.ts";
 import { avatarURL } from "@utils/avatarURL.ts";
 import { uptime } from "@utils/uptime.ts";
-import { JollyVersion } from "../../classes/client.ts";
+import { SystemdVersion } from "../../classes/client.ts";
 
 class BotInfo extends JollyCommand {
     constructor() {
@@ -50,7 +50,7 @@ class BotInfo extends JollyCommand {
             .addField("Runtime", `Deno v${deno_version.deno}`, true)
             .addField("Language", `TypeScript v${deno_version.typescript}`, true)
             .addField("Library", `Discordeno v${discordeno_version}`, true)
-            .addField("Jolly Version", `${JollyVersion} ${lastGitOutput}`, true)
+            .addField("Jolly Version", `${SystemdVersion} ${lastGitOutput}`, true)
             .addField("Uptime", up, true)
             .addField("Memory", sMemory, true)
             .setThumb(await avatarURL(client, user))
